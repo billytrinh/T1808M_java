@@ -1,6 +1,7 @@
 package Session_1;
 
 import java.util.Scanner;
+import Session_2.*;
 
 public class Demo {
 
@@ -11,6 +12,10 @@ public class Demo {
     final static int k = 20; // Const
 
     public static void main(String[] args){
+        Nhanvien nhanvien1 = new Nhanvien();
+        nhanvien1.setName("Nguyen van An");
+
+
         int x = 10;
         System.out.println("Hello world.");
         Demo obj = new Demo();
