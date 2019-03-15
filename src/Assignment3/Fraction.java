@@ -1,11 +1,14 @@
 package Assignment3;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Fraction {
 
     public int tu_so;
     public int mau_so;
+
+    public ArrayList<Integer> USC;
 
     public Fraction() {
     }
