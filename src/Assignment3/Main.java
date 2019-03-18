@@ -4,6 +4,12 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String args[]){
+
+            TamGiacDeu tamGiacDeu = new TamGiacDeu();
+            tamGiacDeu.chuvi();
+            tamGiacDeu.loaiTamGiac = "Deu";
+            tamGiacDeu.TinhDienTich("hello",5);
+
            ArrayList arrayList = new ArrayList();
 
            arrayList.add(new TamGiac());
