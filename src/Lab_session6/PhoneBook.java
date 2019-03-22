@@ -1,10 +1,64 @@
 package Lab_session6;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
 public class PhoneBook extends Phone{
+
+    static class StaticPhone{
+        public void run(){
+            System.out.println("running..");
+        }
+    }
+
+    class InnerPhone{
+        public void running(){
+            System.out.println("InnerPhone running..");
+        }
+    }
+
+    public static void main(String args[]) throws ArithmeticException{
+        //PhoneBook.StaticPhone staticPhone = new PhoneBook.StaticPhone();
+
+        //PhoneBook.InnerPhone innerPhone = new PhoneBook().new InnerPhone();
+
+        int x =0,y=1;
+        x++;
+
+//        if(y <= 0) throw new ArithmeticException("Loi roi");
+//        int z = x/y;
+//        z++;
+//        System.out.println("z = "+z);
+
+        int z = 0;
+        try {
+            z = x/y;
+            z++;
+            System.out.println("z = "+z);
+        }catch (ArithmeticException e){
+            System.out.println("loi tinh toan");
+       // }catch (SQLException e){
+
+        //}catch (IOException e){
+
+        //}catch (FileNotFoundException e){
+
+        }catch (Exception e){
+            System.out.println("Loi roi");
+        }finally {
+           if(z == 0){
+                z = 1;
+           }
+        }
+
+        System.out.println("Done z = "+z );
+
+
+    }
 
     public ArrayList<PhoneNumber> PhoneList;
 
