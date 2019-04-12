@@ -5,8 +5,7 @@ public class RunThread implements Runnable{
     public void run(){
         for (int i=1;i<10;i+=2){
             try {
-                System.out.println(Thread.currentThread()
-                        .getName()+" : "+i);
+                System.out.println("Run Thread : "+i);
                 Thread.sleep(1000);
             }catch (Exception e){}
 

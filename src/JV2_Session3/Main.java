@@ -12,7 +12,7 @@ public class Main {
         RunThread r1 = new RunThread();
         Thread thread = new Thread(r1);
         thread.start();
-
+        thread.join();
         Runnable r2 = new Runnable() {
             @Override
             public void run() {
@@ -26,10 +26,10 @@ public class Main {
             }
         };
         Thread t2 = new Thread(r2);
-        t2.setDaemon(true);
-        if(t2.isDaemon()){
-            t2.setDaemon(false);
-        }
+       // t2.setDaemon(true);
+//        if(t2.isDaemon()){
+//            t2.setDaemon(false);
+//        }
         t2.start();
 
         System.out.println("Main thread - name:"+
