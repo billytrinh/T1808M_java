@@ -1,6 +1,7 @@
 package JV2_Assignment5;
 
 import java.sql.*;
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Main {
@@ -10,7 +11,7 @@ public class Main {
 
     public static void main(String[] args){
         try {
-            Connector connector = new Connector();
+            Connector connector = Connector.getInstance();
             boolean stop = false;
             Scanner scanner = new Scanner(System.in);
             while (!stop){
