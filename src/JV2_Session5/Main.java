@@ -2,6 +2,7 @@ package JV2_Session5;
 
 // Buoc 1: import package
 import java.sql.*;
+import java.util.ResourceBundle;
 
 public class Main {
 
